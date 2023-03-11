@@ -13,6 +13,9 @@ module.exports = withBundleAnalyzer(
   withPWA({
     swcMinify: true,
     reactStrictMode: true,
+    experimental: {
+      appDir: true,
+    },
     compiler: {
       styledComponents: true,
     },

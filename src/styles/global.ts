@@ -1,12 +1,4 @@
-import { Poppins } from '@next/font/google';
-
 import { createGlobalStyle } from 'styled-components';
-
-const poppins = Poppins({
-  weight: ['300', '400', '500'],
-  display: 'swap',
-  subsets: ['latin'],
-});
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -24,9 +16,5 @@ export const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 62.5%;
-  }
-
-  body {
-    font-family: ${poppins.style.fontFamily};
   }
 `;

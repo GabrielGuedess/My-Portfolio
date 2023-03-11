@@ -57,7 +57,12 @@
   ],
   "overrides": [
     {
-      "files": ["src/pages/*", "src/pages/api/*", "**/stories.tsx"],
+      "files": [
+        "src/app/*",
+        "src/pages/*",
+        "**/stories.tsx",
+        "src/pages/api/*"
+      ],
       "rules": {
         "import/no-default-export": "off"
       }
@@ -66,6 +71,7 @@
       "files": ["**.js"],
       "rules": {
         "no-undef": "off",
+        "unicorn/prefer-module": "off",
         "@typescript-eslint/no-var-requires": "off"
       }
     },
